@@ -1,0 +1,9 @@
+const friend = ["Michael", "Temitope", "Bakare", "Adebayo", "Bukky"]
+
+console.log(friend)
+
+console.log(friend.toString())
+
+const bestFriend = (friend[3])
+
+console.log(bestFriend)
