@@ -1,0 +1,45 @@
+const moreBooks = [
+    {
+        title: 'Obsession',
+        description: 'Drama',
+        numberOfPages: 300,
+        author: 'Michael Sam',
+        reading: false
+    },
+    {
+        title: 'M3gan',
+        description: 'Sci-fi',
+        numberOfPages: 100,
+        author: 'Mclean Miller',
+        reading: true
+    },
+    {
+        title: 'Boomerang',
+        description: 'Drama',
+        numberOfPages: 150,
+        author: 'Tunde Lawal',
+        reading: true
+    },
+    {
+        title: 'Gifted Hands',
+        description: 'Non-fiction',
+        numberOfPages: 350,
+        author: 'Ben Carson',
+        reading: false
+    }
+];
+
+// Function to toggle reading status
+function toggleReadingStatus(title) {
+    const book = moreBooks.find(book => book.title === title);
+    if (book) {
+        book.reading = !book.reading; // Toggle the reading status
+        console.log(`${book.title} reading status updated to: ${book.reading}`);
+    } else {
+        console.log(`Book with title "${title}" not found.`);
+    }
+}
+
+// Example usage
+toggleReadingStatus('Obsession'); // Toggles 'reading' for 'Obsession'
+toggleReadingStatus('Gifted Hands'); // Toggles 'reading' for 'Gifted Hands'

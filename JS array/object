@@ -1,0 +1,109 @@
+const bookObject = {
+    title: 'Things fall apart',
+    description: 'Fiction',
+    numberOfPages: 235,
+    author: 'Chinua Achebe',
+    reading: true,
+    toggleReadingStatus: function() {
+        if(bookObject.reading === false) {
+            this.reading = true   
+        } 
+        else {
+            this.reading = false
+        } 
+    
+    }
+}
+console.log (bookObject.reading)
+
+
+const moreBooks = {
+    books:[
+    {
+        title: 'Obsession',
+        description: 'Drama',
+        numberOfPages: 300,
+        author: 'Michael Sam',
+        reading: false,
+        // toggleReadingStatus: function(title) {
+        //     if(this.reading === true){
+        //         this.reading = false
+        //         console.log (this.reading)
+        //     }
+        // }
+    },
+    {
+        title: 'M3gan',
+        description: 'Sci-fi',
+        numberOfPages: 100,
+        author: 'Mclean Miller',
+        reading: true,
+        // toggleReadingStatus: function(title) {
+        //     if(this.reading === true){
+        //         this.reading = true
+        //         console.log (this.reading)
+        //     }
+        // }
+    },
+    {
+        title: 'Boomerang',
+        description: 'Drama',
+        numberOfPages: 150,
+        author: 'Tunde Lawal',
+        reading: true,
+        // toggleReadingStatus: function(title) {
+        //     if(this.reading === true){
+        //         this.reading = true
+        //         console.log (this.reading)
+        //     }
+        // }
+    },
+    {
+        title: 'Gifted hands',
+        description: 'Non-fiction',
+        numberOfPages: 350,
+        author: 'Ben Carson',
+        reading: false,
+        // toggleReadingStatus: function(title) {
+        //     if(this.reading === true){
+        //         this.reading = false
+        //         console.log (this.reading)
+        //     }
+        // }
+    } 
+   ] 
+}
+console.log( moreBooks)
+// for (let books =1; books <=4; books++)(
+//     console.log ("book" + " number " + books)
+// )
+for (let i = 0; i < moreBooks.books.length; i++) {
+    if (moreBooks.books[i].reading === true) {
+        console.log("Title:" + moreBooks.books[i].title);
+        console.log("Description:" + moreBooks.books[i].description);
+        console.log("Pages:" + moreBooks.books[i].numberOfPages);
+        console.log("Author:" + moreBooks.books[i].author);
+        console.log('--------------------------');
+    }
+}
+
+
+// moreBooks.books[0].toggleReadingStatus ( {
+//     if(books[0].reading === true) {
+//         moreBooks.books[0].reading = true
+//         console.log(moreBooks.books[0])
+//     }
+// } )
+//     if(moreBooks.books[0].reading === true) {
+//         moreBooks.books[0].reading = true
+//         console.log(moreBooks.books[0])
+    // }
+
+// moreBooks.books[0].toggleReadingStatus ();
+// console.log (moreBooks.books[0].reading)
+
+
+
+
+
+
