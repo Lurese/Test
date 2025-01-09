@@ -1,0 +1,8 @@
+
+//1 Calculate the sum of numbers within an array
+const number=[5, 10, 14, 17, 25];
+let sum =0;
+for (let num of number){
+    sum = sum + num
+}
+console.log(sum)

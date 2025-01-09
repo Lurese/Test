@@ -1,0 +1,7 @@
+
+//2 Create a length converter function
+function meterTocm(m) {
+    return m*100
+}
+let cm = meterTocm(50)
+console.log(cm + 'cm')

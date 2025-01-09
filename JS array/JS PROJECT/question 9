@@ -1,0 +1,7 @@
+ 
+ // //9 Return the number of vowels in a string
+function vowels (str) {
+    return str.match (/[aeiou]/gi)? str.match (/[aeiou]/gi).length: 0
+};
+let countVowels = vowels ('Eaten')  
+console.log(countVowels)

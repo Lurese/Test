@@ -1,0 +1,14 @@
+ 
+ //5 Create a function that reverses an array
+// const daysOFtheweek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; {
+//     function daysOFtheweek ()
+//         return daysOFtheweek.length 
+//     }
+//     const output = daysOFtheweek ([6] -1) //MY TRIAL
+// }
+console.log(output)
+function daysOFtheweek(arr) {
+    return arr.reverse()
+}
+let output = daysOFtheweek (['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+console.log(output)

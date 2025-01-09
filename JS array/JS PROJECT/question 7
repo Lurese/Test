@@ -1,0 +1,10 @@
+ 
+ //7 Sort an array of numbers in descending order
+const numbER = [11, 7, 12, 3, 13, 6, 14, 10, 15]
+const sortedNumber = numbER.sort((a, b) => a - b)
+console.log(sortedNumber)
+// function numbER(arr) {                         // TRIED IT WITH FUNCTION
+//     return arr.sort((a, b) => b - a)
+// }
+// let sortedNumber = numbER([11, 7, 12, 3, 13, 6, 14, 10, 15])
+// console.log(sortedNumber)
